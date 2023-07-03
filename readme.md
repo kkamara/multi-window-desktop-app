@@ -2,7 +2,7 @@
 
 # desktop-multi-window-app
 
-(01 Jun 23) Electronjs.
+Electronjs.
 
 ## Download
 
