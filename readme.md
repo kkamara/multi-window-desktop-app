@@ -6,7 +6,7 @@
 
 ## Download
 
-* [macOs](https://github.com/kkamara/desktop-react-boilerplate/releases).
+* [macOs](https://github.com/kkamara/desktop-multi-window-app/releases).
 
 ## Installation
 
