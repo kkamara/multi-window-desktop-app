@@ -25,7 +25,7 @@ function createWindow() {
     mainWindow.loadURL(`file://${path.join(
         __dirname, 
         '../', 
-        'src/views/index.html',
+        'src/views/index.html', // index.pug?exampleArg=test
     )}`);
 
     mainWindow.maximize();
