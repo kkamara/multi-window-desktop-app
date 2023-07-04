@@ -13,14 +13,20 @@ function createWindow() {
         height: 680, 
         webPreferences: {
             devTools: inProduction ? false : true,
+            nodeIntegration: true,
+            contextIsolation: false,
         },
-    });
+        show: false,
+     });
 
     mainWindow.loadURL(`file://${path.join(
         __dirname, 
         '../', 
         'src/views/index.html',
     )}`);
+
+    mainWindow.maximize();
+    mainWindow.show();
 
     mainWindow.on('closed', () => (mainWindow = null));
 }

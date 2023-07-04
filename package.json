@@ -13,11 +13,14 @@
     "electron-build": "electron-builder",
     "release": "npm run build && electron-builder --linux --win --mac --x64 --ia32 --publish never",
     "build": "npm run electron-build",
-    "start": "electron ."
+    "start": "electron .",
+    "dev": "electronmon public/electron.js"
   },
   "license": "BSD-3-Clause",
   "devDependencies": {
     "electron": "^25.1.0",
-    "electron-builder": "^23.6.0"
-  }
+    "electron-builder": "^23.6.0",
+    "electronmon": "^2.0.2"
+  },
+  "dependencies": {}
 }

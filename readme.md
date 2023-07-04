@@ -24,6 +24,12 @@ Electronjs.
   yarn start
 ```
 
+###### To refresh build on project file save.
+
+```bash
+  yarn dev
+```
+
 ## Building target: your machine
 
 ```bash
