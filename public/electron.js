@@ -8,10 +8,20 @@ const inProduction = app.isPackaged;
 let mainWindow;
 
 function createWindow() {
-    mainWindow = new BrowserWindow({ width: 900, height: 680, });
+    mainWindow = new BrowserWindow({ 
+        width: 900, 
+        height: 680, 
+        webPreferences: {
+            devTools: inProduction ? false : true,
+        },
+    });
 
     if (inProduction) {
-        mainWindow.loadURL(`file://${path.join(__dirname, '../build/index.html')}`);
+        mainWindow.loadURL(`file://${path.join(
+            __dirname, 
+            '../', 
+            'src/views/index.html',
+        )}`);
     } else {
         mainWindow.loadURL('http://localhost:3000');
     }
