@@ -13,7 +13,7 @@
     "electron-build": "electron-builder",
     "release": "npm run build && electron-builder --linux --win --mac --x64 --ia32 --publish never",
     "build": "npm run electron-build",
-    "start": "electron .\""
+    "start": "electron ."
   },
   "license": "BSD-3-Clause",
   "devDependencies": {
