@@ -16,15 +16,11 @@ function createWindow() {
         },
     });
 
-    if (inProduction) {
-        mainWindow.loadURL(`file://${path.join(
-            __dirname, 
-            '../', 
-            'src/views/index.html',
-        )}`);
-    } else {
-        mainWindow.loadURL('http://localhost:3000');
-    }
+    mainWindow.loadURL(`file://${path.join(
+        __dirname, 
+        '../', 
+        'src/views/index.html',
+    )}`);
 
     mainWindow.on('closed', () => (mainWindow = null));
 }
