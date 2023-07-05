@@ -1,4 +1,4 @@
-<img src="https://github.com/kkamara/useful/blob/main/drb.png?raw=true" alt="drb.png" />
+<img src="https://github.com/kkamara/useful/blob/main/nodejs-crm-desktop.png?raw=true" alt="nodejs-crm-desktop.png" />
 
 # desktop-multi-window-app
 
