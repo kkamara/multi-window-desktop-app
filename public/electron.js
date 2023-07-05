@@ -1,8 +1,10 @@
 const electron = require('electron');
+const path = require('path');
+const setupPug = require('electron-pug');
+
 const app = electron.app;
 const ipcMain = electron.ipcMain;
 const BrowserWindow = electron.BrowserWindow;
-const path = require('path');
 
 const inProduction = app.isPackaged;
 
