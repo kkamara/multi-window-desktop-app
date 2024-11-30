@@ -1,5 +1,5 @@
 {
-  "name": "desktop-multi-window-app",
+  "name": "multi-window-desktop-app",
   "description": "Electronjs.",
   "version": "1.1.0",
   "author": "https://github.com/kkamara",
@@ -7,7 +7,7 @@
   "main": "public/electron.js",
   "homepage": "./",
   "build": {
-    "appId": "<com.desktop-multi-window-app>"
+    "appId": "<com.multi-window-desktop-app>"
   },
   "scripts": {
     "electron-build": "electron-builder",

@@ -1,12 +1,12 @@
 <img src="https://github.com/kkamara/useful/blob/main/nodejs-crm-desktop.png?raw=true" alt="nodejs-crm-desktop.png" />
 
-# desktop-multi-window-app
+# Multi-Window Desktop App
 
 Electronjs. Securely access desktop API privileged access from web view.
 
 ## Download
 
-* [macOs](https://github.com/kkamara/desktop-multi-window-app/releases).
+* [macOs](https://github.com/kkamara/multi-window-desktop-app/releases).
 
 ## Installation
 
