@@ -64,7 +64,7 @@ function createChildWindow() {
     )}`);
     
     childWindow.once('ready-to-show', () => {
-      childWindow.show();
+        childWindow.show();
     });
 }
 
