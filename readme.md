@@ -2,7 +2,7 @@
 
 # Multi-Window Desktop App
 
-Electronjs. Securely access desktop API privileged access from web view.
+ElectronJS. Securely access desktop API privileged access from web view.
 
 ## Download
 
