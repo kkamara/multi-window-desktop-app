@@ -39,7 +39,7 @@ Electronjs. Securely access desktop API privileged access from web view.
 ## Building target: cross-platform
 
 ```bash
-  # --linux --win --mac --x64 --ia32
+  # --linux --win --mac --ia32 --x64
   yarn run release
 ```
 

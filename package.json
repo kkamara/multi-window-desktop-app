@@ -1,7 +1,7 @@
 {
   "name": "multi-window-desktop-app",
   "description": "Electronjs.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "https://github.com/kkamara",
   "private": true,
   "main": "public/electron.js",
@@ -11,7 +11,7 @@
   },
   "scripts": {
     "electron-build": "electron-builder",
-    "release": "npm run build && electron-builder --linux --win --mac --x64 --ia32 --publish never",
+    "release": "npm run build && electron-builder --win --x64 --publish never",
     "build": "npm run electron-build",
     "start": "electron .",
     "dev": "electronmon public/electron.js"
@@ -22,5 +22,7 @@
     "electron-builder": "^23.6.0",
     "electronmon": "^2.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "electron-pug": "^2.0.0"
+  }
 }

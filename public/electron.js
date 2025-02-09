@@ -1,5 +1,6 @@
 const electron = require('electron');
 const path = require('path');
+const setupPug = require('electron-pug');
 
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
@@ -15,7 +16,7 @@ const preload = path.join(
     'preload.js',
 );
 
-function createWindow() {
+async function createWindow() {
     mainWindow = new BrowserWindow({ 
         width: 900, 
         height: 680, 
@@ -29,10 +30,17 @@ function createWindow() {
         show: false,
      });
 
+    try {
+        let pug = await setupPug();
+        pug.on('error', err => console.error('electron-pug error', err));
+    } catch (err) {
+        app.quit();
+    }
+
     mainWindow.loadURL(`file://${path.join(
         __dirname, 
         '../', 
-        'src/views/index.html', // index.pug?exampleArg=test
+        'src/views/index.pug', // index.pug?exampleArg=test
     )}`);
 
     mainWindow.maximize();
@@ -60,7 +68,7 @@ function createChildWindow() {
     childWindow.loadURL(`file://${path.join(
         __dirname, 
         '../', 
-        'src/views/settings.html',
+        'src/views/settings.pug',
     )}`);
     
     childWindow.once('ready-to-show', () => {
