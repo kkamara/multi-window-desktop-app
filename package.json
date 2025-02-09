@@ -22,5 +22,7 @@
     "electron-builder": "^23.6.0",
     "electronmon": "^2.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "electron-pug": "^2.0.0"
+  }
 }
