@@ -6,16 +6,15 @@ ElectronJS. Securely access desktop API privileged access from web view.
 
 ## Download
 
-* [macOs](https://github.com/kkamara/multi-window-desktop-app/releases).
+* [Windows](https://github.com/kkamara/multi-window-desktop-app/releases).
 
 ## Installation
 
 * [Node.js](https://nodejs.org/en/) (arrives with [npmjs](https://www.npmjs.com/))
-* [Yarn](https://yarnpkg.com/)
 
 ```bash
-  npm i -g yarn
-  yarn install # and yarn
+  npm install -g yarn
+  yarn install
 ```
 
 ## Usage
