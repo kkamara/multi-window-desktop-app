@@ -87,6 +87,12 @@ ipcMain.on('closeChildWindow', (event, arg) => {
 
 app.on('ready', createWindow);
 
+process.on("uncaughtException", err => {
+    if (false === inProduction) {
+        console.log(err);
+    }
+});
+
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') {
         app.quit();
