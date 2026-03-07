@@ -11,8 +11,7 @@ const inProduction = app.isPackaged;
 let mainWindow;
 let childWindow;
 const preload = path.join(
-    __dirname, 
-    '../',
+    __dirname,
     'preload.js',
 );
 
