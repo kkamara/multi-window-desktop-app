@@ -1,3 +1,5 @@
 function goToFirstWindow(){
-  window.api.send('closeChildWindow');  
+  window.api.send('closeChildWindow');
 }
+
+window.goToFirstWindow = goToFirstWindow;
