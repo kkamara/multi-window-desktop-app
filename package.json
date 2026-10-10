@@ -1,6 +1,5 @@
 {
   "name": "multi-window-desktop-app",
-  "description": "ElectronJS. Securely access desktop API privileged access from web view.",
   "version": "1.2.0",
   "author": "https://github.com/kkamara",
   "private": true,
