@@ -6,7 +6,7 @@
   "main": "public/electron.js",
   "homepage": "./",
   "build": {
-    "appId": "<com.multi-window-desktop-app>"
+    "appId": "com.multi-window-desktop-app"
   },
   "scripts": {
     "electron-build": "electron-builder",
